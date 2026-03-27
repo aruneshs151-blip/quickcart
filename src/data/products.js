@@ -1,0 +1,68 @@
+const products = [
+  {
+    id: 1,
+    name: "Wireless Headphones",
+    description: "High quality sound",
+    price: 1999,
+    category: "Electronics",
+    image: "https://images.unsplash.com/photo-1518449037947-4b5e9d0c6c16?w=500",
+  },
+  {
+    id: 2,
+    name: "Smart Watch",
+    description: "Track your fitness",
+    price: 2499,
+    category: "Wearables",
+    image: "https://images.unsplash.com/photo-1511735111819-9a3f7709049c?w=500",
+  },
+  {
+    id: 3,
+    name: "Shoes",
+    description: "Comfortable running shoes",
+    price: 1499,
+    category: "Fashion",
+    image: "https://images.unsplash.com/photo-1528701800489-20be3c6f8e45?w=500",
+  },
+  {
+    id: 4,
+    name: "Backpack",
+    description: "Carry everything easily",
+    price: 999,
+    category: "Accessories",
+    image: "https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?w=500",
+  },
+  {
+    id: 5,
+    name: "Laptop",
+    description: "High performance laptop",
+    price: 59999,
+    category: "Electronics",
+    image: "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=500",
+  },
+  {
+    id: 6,
+    name: "Camera",
+    description: "Capture moments",
+    price: 29999,
+    category: "Electronics",
+    image: "https://images.unsplash.com/photo-1519183071298-a2962be96df0?w=500",
+  },
+  {
+    id: 7,
+    name: "Watch",
+    description: "Stylish analog watch",
+    price: 1999,
+    category: "Accessories",
+    image: "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500",
+  },
+  {
+    id: 8,
+    name: "Sunglasses",
+    description: "Protect your eyes",
+    price: 799,
+    category: "Fashion",
+    image: "https://images.unsplash.com/photo-1511499767150-a48a237f0083?w=500",
+  },
+];
+
+export default products;
