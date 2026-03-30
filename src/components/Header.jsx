@@ -1,11 +1,18 @@
-import "../styles/Header.css";
+import { Link } from "react-router-dom";
+import { useCart } from "../context/CartContext";
 
-function Header() {
+const Header = () => {
+  const cartData = useCart();
+  const cart = cartData?.cart || [];
+
   return (
-    <header className="header">
-      <h1>QuickCart</h1>
-    </header>
+    <nav>
+      <Link to="/">Home</Link>
+      <Link to="/category/Electronics">Electronics</Link>
+      <Link to="/category/Fashion">Fashion</Link>
+      <Link to="/cart">Cart ({cart.length})</Link>
+    </nav>
   );
-}
+};
 
 export default Header;
