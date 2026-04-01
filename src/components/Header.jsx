@@ -2,8 +2,7 @@ import { Link } from "react-router-dom";
 import { useCart } from "../context/CartContext";
 
 const Header = () => {
-  const cartData = useCart();
-  const cart = cartData?.cart || [];
+  const { cart } = useCart();
 
   return (
     <nav>

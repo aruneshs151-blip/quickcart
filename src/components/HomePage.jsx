@@ -5,7 +5,7 @@ import ProductCard from "./ProductCard";
 const HomePage = () => {
   const [search, setSearch] = useState("");
 
-  const filteredProducts = products.filter(p =>
+  const filteredProducts = products.filter((p) =>
     p.name.toLowerCase().includes(search.toLowerCase())
   );
 
@@ -13,7 +13,6 @@ const HomePage = () => {
     <div>
       <h2>All Products</h2>
 
-      {/* 🔍 Search Bar */}
       <input
         type="text"
         placeholder="Search products..."
@@ -21,7 +20,6 @@ const HomePage = () => {
         onChange={(e) => setSearch(e.target.value)}
       />
 
-      {/* 📦 Products */}
       <div>
         {filteredProducts.length > 0 ? (
           filteredProducts.map((product) => (

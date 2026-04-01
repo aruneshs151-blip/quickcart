@@ -5,20 +5,20 @@ import ProductCard from "./ProductCard";
 const CategoryPage = () => {
   const { category } = useParams();
 
-  const filteredProducts = products.filter(
-    (p) => p.category === category
+  const filtered = products.filter(
+    (p) => p.category.toLowerCase() === category.toLowerCase()
   );
 
   return (
     <div>
-      <h2>{category} Products</h2>
+      <h2>{category}</h2>
 
-      {filteredProducts.length > 0 ? (
-        filteredProducts.map((product) => (
+      {filtered.length > 0 ? (
+        filtered.map((product) => (
           <ProductCard key={product.id} product={product} />
         ))
       ) : (
-        <p>No products in this category</p>
+        <p>No products found</p>
       )}
     </div>
   );
